@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "981343304955",
+    "firebase_url": "https://campus-ways.firebaseio.com",
+    "project_id": "campus-ways",
+    "storage_bucket": "campus-ways.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981343304955:android:35e59efb153b225c",
+        "android_client_info": {
+          "package_name": "com.example.campusways.campusways"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981343304955-hvebggreqgdpsh2uo80vm1erjim1bq5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.campusways.campusways",
+            "certificate_hash": "fe8325df1207c8959632577a3ddc9e0213ebf70a"
+          }
+        },
+        {
+          "client_id": "981343304955-0n8ithp3br9llpj8eueu82odarivf6qf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbl0wixKbSVnX2jUD_7rKJNLJoAat-xEk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981343304955-0n8ithp3br9llpj8eueu82odarivf6qf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
