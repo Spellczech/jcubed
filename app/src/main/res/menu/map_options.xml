@@ -1,21 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="">
+
     <item
-        android:id="@+id/normal_map"
-        android:checkable="false"
-        android:title="@string/normal_map"
+        android:id="@+id/Destination"
+        android:title="@string/destination"
         app:showAsAction="never" />
     <item
-        android:id="@+id/hybrid_map"
-        android:title="@string/hybrid_map"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/satellite_map"
-        android:title="@string/satellite_map"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/terrain_map"
-        android:title="@string/terrain_map"
-        app:showAsAction="never" />
+        android:id="@+id/settings"
+        app:showAsAction="collapseActionView"
+        android:title="@string/settings">
+        <menu android:id="@+id/group_settings">
+            <item
+                android:id="@+id/file"
+                android:checkable="false"
+                android:title="@string/map_types"
+                app:showAsAction="collapseActionView">
+                <menu android:id="@+id/group_map">
+                    <item
+                        android:id="@+id/normal_map"
+                        android:checkable="false"
+                        android:title="@string/normal_map"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/hybrid_map"
+                        android:title="@string/hybrid_map"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/satellite_map"
+                        android:title="@string/satellite_map"
+                        app:showAsAction="never" />
+                    <item
+                        android:id="@+id/terrain_map"
+                        android:title="@string/terrain_map"
+                        app:showAsAction="never" />
+                </menu>
+            </item>
+            <item
+                android:id="@+id/logout"
+                android:title="@string/logout"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/donate"
+                android:title="@string/donate"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/aboutus"
+                android:title="@string/about_us"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
 </menu>
