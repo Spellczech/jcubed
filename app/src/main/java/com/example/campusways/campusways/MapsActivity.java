@@ -1,6 +1,7 @@
 package com.example.campusways.campusways;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -20,8 +21,6 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PointOfInterest;
 
-//import butterknife.Bind;
-//import butterknife.ButterKnife;
 
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
@@ -37,6 +36,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
     }
 
     @Override
@@ -44,6 +44,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.map_options, menu);
         return true;
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -61,6 +62,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             case R.id.terrain_map:
                 mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
                 return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -143,8 +145,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 }
         }
     }
+    // On button click the page switches to Maps to Main
+    public void startActivity(MenuItem item) {
+        startActivity(new Intent(MapsActivity.this, MainActivity.class));
 
-    //Get Current Location
+    }
+
 
 
 

@@ -40,7 +40,11 @@
             <item
                 android:id="@+id/logout"
                 android:title="@string/logout"
-                app:showAsAction="never" />
+                android:onClick="startActivity"
+                app:showAsAction="never"
+
+
+                />
             <item
                 android:id="@+id/donate"
                 android:title="@string/donate"
