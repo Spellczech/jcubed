@@ -45,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
+        android:onClick="desActivity"
         android:background="#000"
         android:textColor="#fff"
         android:layout_gravity="center"

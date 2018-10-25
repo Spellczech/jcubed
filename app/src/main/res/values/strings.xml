@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Campus Ways</string>
+
+    //Menu Items
     <string name="title_activity_maps">Campus Ways</string>
     <string name="normal_map"> Normal Map</string>
     <string name="hybrid_map"> Hybrid Map</string>
@@ -15,9 +17,32 @@
     <string name="logout">Log Out</string>
     <string name="donate">Donate</string>
     <string name="about_us">About Us</string>
+
+    // For Login page
     <string name="email">email</string>
     <string name="password">password</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
+    <string name="beaumont" />
+    <string name="confirm">Confirm</string>
+    <string name="b301">301</string>
+    <string name="b302">302</string>
+
+    // For Building Selection
+    <string-array name="names">
+        <item name="beaumont">Beaumont</item>
+    </string-array>
+
+    <string-array name="rooms">
+        <item>301</item>
+        <item>301F</item>
+        <item>301G</item>
+        <item>302</item>
+        <item>304</item>
+        <item>305</item>
+        <item>312</item>
+        <item>314</item>
+    </string-array>
+
 
 </resources>

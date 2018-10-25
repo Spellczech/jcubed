@@ -6,6 +6,7 @@
     <item
         android:id="@+id/Destination"
         android:title="@string/destination"
+        android:onClick="desActivity"
         app:showAsAction="never" />
     <item
         android:id="@+id/settings"

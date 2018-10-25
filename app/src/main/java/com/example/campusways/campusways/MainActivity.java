@@ -39,8 +39,13 @@ public class MainActivity extends AppCompatActivity {
     // On button click the page goes to Maps page
     public void startActivity(View view) {
 
-        startActivity(new Intent(MainActivity.this, MapsActivity.class));
+        startActivity(new Intent(MainActivity.this, BuildingSelection.class));
     }
+    public void desActivity(View view) {
+        startActivity(new Intent(MainActivity.this, BuildingSelection.class));
+    }
+
+
 }
 
 

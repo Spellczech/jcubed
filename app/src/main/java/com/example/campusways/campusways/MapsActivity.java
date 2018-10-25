@@ -151,10 +151,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     }
 
-
-
-
-
-
-
+    public void desActivity(MenuItem item) {
+        startActivity(new Intent(MapsActivity.this, BuildingSelection.class));
+    }
 }
