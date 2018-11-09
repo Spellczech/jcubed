@@ -1,41 +1,87 @@
 package com.example.campusways.campusways;
 
+
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FirebaseAuth mAuth;
-    private EditText password;
-    private EditText email;
-    private Button button_register;
-    private Button button_login;
+    Button btnSignOut;
+    FirebaseAuth auth;
+    FirebaseUser user;
+    ProgressDialog PD;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+
+
+    @Override    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        email = (EditText) findViewById(R.id.signup_email_input);
-        password =(EditText) findViewById(R.id.signup_password_input);
-        button_register = (Button)findViewById(R.id.button_register);
-        button_login = (Button)findViewById(R.id.button_login);
-        mAuth = FirebaseAuth.getInstance();
 
-        button_register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MapsActivity.class));
+        auth = FirebaseAuth.getInstance();
+        user = auth.getCurrentUser();
+
+        PD = new ProgressDialog(this);
+        PD.setMessage("Loading...");
+        PD.setCancelable(true);
+        PD.setCanceledOnTouchOutside(false);
+
+        btnSignOut = (Button) findViewById(R.id.sign_out_button);
+
+        btnSignOut.setOnClickListener(new View.OnClickListener() {
+            @Override            public void onClick(View view) {
+                auth.signOut();
+                FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {
+                    @Override
+                    public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                        FirebaseUser user = firebaseAuth.getCurrentUser();
+                        if (user == null) {
+                            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                            finish();
+                        }
+                    }
+                };
             }
         });
 
+        findViewById(R.id.change_password_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), ForgotandChangePassword.class).putExtra("Mode", 1));
+            }
+        });
 
+        findViewById(R.id.change_email_button).setOnClickListener(new View.OnClickListener() {
+            @Override            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), ForgotandChangePassword.class).putExtra("Mode", 2));
+            }
+        });
+
+        findViewById(R.id.delete_user_button).setOnClickListener(new View.OnClickListener() {
+            @Override            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), ForgotandChangePassword.class).putExtra("Mode", 3));
+            }
+        });
     }
+
+    @Override    protected void onResume() {
+        if (auth.getCurrentUser() == null) {
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            finish();
+        }
+        super.onResume();
+    }
+
+        public void onClick(View view) {
+            startActivity(new Intent(MainActivity.this, MapsActivity.class));
+        }
     // On button click the page goes to Maps page
     public void startActivity(View view) {
 
@@ -43,9 +89,16 @@ public class MainActivity extends AppCompatActivity {
     }
     public void desActivity(View view) {
         startActivity(new Intent(MainActivity.this, BuildingSelection.class));
+
     }
 
+};
 
-}
+
+
+
+
+
+
 
 

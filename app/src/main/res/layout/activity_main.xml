@@ -1,53 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.campusways.campusways.MainActivity">
+    android:padding="16dp">
+
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="20dp"
-        android:textSize="30sp"
-        android:text="@string/register"
-        android:textColor="#000"/>
-    <EditText
-        android:padding="10dp"
-        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/email"
-        android:id="@+id/signup_email_input"
-        android:inputType="textEmailAddress"/>
-    <EditText
-        android:padding="10dp"
-        android:layout_margin="5dp"
-        android:layout_width="match_parent"
+        android:text="Welcome to Campus Ways"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+
+
+    <Password_Change
+        android:id="@+id/change_password_button"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/password"
-        android:id="@+id/signup_password_input"
-        android:inputType="textPassword"/>
-    <Button
-        android:id="@+id/button_register"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="Change Password"
+        android:textColor="@color/colorPrimary" />
+
+
+    <Email_Change
+        android:id="@+id/change_email_button"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/register"
-        android:onClick="startActivity"
-        android:background="#000"
-        android:textColor="#fff"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"/>
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/colorPrimary"
+        android:text="Change Email"
+        android:textColor="@color/colorPrimary" />
+
+
+    <Delete
+        android:id="@+id/delete_user_button"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:onClick="desActivity"
-        android:background="#000"
-        android:textColor="#fff"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="20dip"
+        android:background="@color/colorPrimary"
+        android:text="Delete User"
+        android:textColor="@color/colorPrimary" />
+
+
+    <Logout
+        android:id="@+id/sign_out_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/colorPrimary"
+        android:text="Sign Out"
+        android:textColor="@color/colorPrimary" />
+
+
 </LinearLayout>
+
