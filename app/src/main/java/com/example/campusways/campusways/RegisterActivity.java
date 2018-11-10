@@ -41,10 +41,10 @@ public class RegisterActivity extends AppCompatActivity {
             finish();
         }
 
-        inputEmail = (EditText) findViewById(R.id.email);
-        inputPassword = (EditText) findViewById(R.id.password);
-        btnSignUp = (Button) findViewById(R.id.sign_up_button);
-        btnLogin = (Button) findViewById(R.id.sign_in_button);
+        inputEmail = findViewById(R.id.email);
+        inputPassword = findViewById(R.id.password);
+        btnSignUp = findViewById(R.id.sign_up_button);
+        btnLogin = findViewById(R.id.sign_in_button);
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override            public void onClick(View view) {
