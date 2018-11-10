@@ -17,41 +17,38 @@
         android:padding="10dp"/>
 
 
-    <Password_Change
+    <Button
         android:id="@+id/change_password_button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dip"
-        android:text="Change Password"
+        android:text="Password Change"
         android:textColor="@color/colorPrimary" />
 
 
-    <Email_Change
+    <Button
         android:id="@+id/change_email_button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dip"
-        android:background="@color/colorPrimary"
         android:text="Change Email"
         android:textColor="@color/colorPrimary" />
 
 
-    <Delete
+    <Button
         android:id="@+id/delete_user_button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dip"
-        android:background="@color/colorPrimary"
         android:text="Delete User"
         android:textColor="@color/colorPrimary" />
 
 
-    <Logout
+    <Button
         android:id="@+id/sign_out_button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dip"
-        android:background="@color/colorPrimary"
         android:text="Sign Out"
         android:textColor="@color/colorPrimary" />
 
