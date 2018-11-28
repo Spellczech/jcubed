@@ -48,6 +48,13 @@
         <activity android:name=".BuildingSelection" />
         <activity android:name=".BeaumontRooms" />
         <activity android:name=".B301Activity"/>
+        <activity android:name=".B301FActivity"/>
+        <activity android:name=".B301GActivity"/>
+        <activity android:name=".B302Activity"/>
+        <activity android:name=".B304Activity"/>
+        <activity android:name=".B305Activity"/>
+        <activity android:name=".B312Activity"/>
+        <activity android:name=".B314Activity"/>
         <activity android:name=".LoginActivity"/>
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".ForgotandChangePassword"/>

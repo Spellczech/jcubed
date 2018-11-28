@@ -29,7 +29,7 @@ public class BuildingSelection extends AppCompatActivity {
         String[] elements = (getResources().getStringArray(R.array.names));
 
         if (elements[0]) {
-
+```````
         } else {
             return;
         }

@@ -59,7 +59,7 @@ import com.google.firebase.auth.FirebaseAuth;
                                                         Toast.LENGTH_LONG).show();
                                                 Log.v("error", task.getResult().toString());
                                             } else {
-                                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                                Intent intent = new Intent(LoginActivity.this, MapsActivity.class);
                                                 startActivity(intent);
                                                 finish();
                                             }
@@ -96,7 +96,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
         @Override    protected void onResume() {
             if (auth.getCurrentUser() != null) {
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                startActivity(new Intent(LoginActivity.this, MapsActivity.class));
                 finish();
             }
             super.onResume();

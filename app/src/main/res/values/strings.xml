@@ -3,12 +3,12 @@
 
     //Menu Items
     <string name="title_activity_maps">Campus Ways</string>
+    <string name="title_activity_main">Campus Ways</string>
 
     <string name="normal_map"> Normal Map</string>
     <string name="hybrid_map"> Hybrid Map</string>
     <string name="satellite_map"> Satellite Map</string>
     <string name="terrain_map"> Terrain Map</string>
-    <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -28,6 +28,12 @@
     <string name="confirm">Confirm</string>
     <string name="b301">301</string>
     <string name="b302">302</string>
+    <string name="b301f">301F</string>
+    <string name="b301g">301G</string>
+    <string name="b304">304</string>
+    <string name="b305">305</string>
+    <string name="b312">312</string>
+    <string name="b314">314</string>
 
     // For Building Selection
     <string-array name="names">

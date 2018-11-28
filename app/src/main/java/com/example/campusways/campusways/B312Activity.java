@@ -4,14 +4,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-public class B304Activity extends AppCompatActivity {
+public class B312Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_b304);
+        setContentView(R.layout.activity_b312);
 
-        ImageView room304_image = (ImageView) findViewById(R.id.imageView304);
-        room304_image.setImageResource(R.drawable.b304);
+        ImageView room312_image = (ImageView) findViewById(R.id.imageView312);
+        room312_image.setImageResource(R.drawable.b312);
     }
 }

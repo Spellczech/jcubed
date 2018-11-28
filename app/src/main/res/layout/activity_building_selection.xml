@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".BuildingSelection">
 
     <TextView
@@ -43,7 +44,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="288dp"
+        android:layout_marginTop="534dp"
         android:onClick="roomActivity"
         android:text="@string/confirm"
         android:title="@string/confirm" />
