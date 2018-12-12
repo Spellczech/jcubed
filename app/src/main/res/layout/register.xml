@@ -32,7 +32,7 @@
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:singleLine="true"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
 
     </android.support.design.widget.TextInputLayout>
@@ -44,16 +44,16 @@
 
 
         <EditText
+            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusableInTouchMode="true"
             android:hint="Password"
-            android:id="@+id/login"
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
             android:maxLines="1"
             android:singleLine="true"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
 
     </android.support.design.widget.TextInputLayout>

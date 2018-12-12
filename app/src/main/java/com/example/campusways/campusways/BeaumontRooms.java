@@ -22,6 +22,7 @@ public class BeaumontRooms extends AppCompatActivity {
             }
         });
 
+
     }
 
     public void b301RoomActivity(View view) {

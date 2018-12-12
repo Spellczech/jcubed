@@ -34,6 +34,7 @@
     <string name="b305">305</string>
     <string name="b312">312</string>
     <string name="b314">314</string>
+    <string name="bmont">Beaumont</string>
 
     // For Building Selection
     <string-array name="names">
@@ -44,7 +45,18 @@
 
     </string-array>
 
-    <string-array name="rooms">
+    <string-array name="startRoom">
+        <item>301</item>
+        <item>301F</item>
+        <item>301G</item>
+        <item>302</item>
+        <item>304</item>
+        <item>305</item>
+        <item>312</item>
+        <item>314</item>
+    </string-array>
+
+    <string-array name="endRoom">
         <item>301</item>
         <item>301F</item>
         <item>301G</item>
